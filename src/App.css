@@ -1,8 +1,8 @@
 #root {
   width: 100%;
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2.5rem 3rem;
   /* text-align: center; */
 }
 
@@ -68,15 +68,69 @@
 
 .main {
   display: flex;
-  gap: 20px;
+  gap: 50px;
   justify-content: center;
 }
 
 form {
-  flex: 1;
+  flex: 3;
 }
 
 .cv-information {
+  flex: 5;
+
+  box-shadow: 0 2px 7px 1px #54545469;
+  padding: 1rem 3rem;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  color: slateblue;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.cv-title-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr;
+}
+
+.cv-title-grid h2 {
+  color: slateblue;
+}
+
+.seperator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seperator hr {
   flex: 1;
-  border: 1px dashed rgb(107, 107, 107);
+  border-top: 2px solid slateblue;
+}
+
+.cv-content-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr;
+}
+
+.content-title {
+  color: slateblue;
+  font-weight: 500;
+}
+
+.content-details {
+  font-weight: 500;
+}
+
+legend {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
